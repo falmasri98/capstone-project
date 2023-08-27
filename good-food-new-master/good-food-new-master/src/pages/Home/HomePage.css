@@ -1,0 +1,120 @@
+.app_section:not(:first-child) {
+    margin-bottom: 100px;
+}
+
+.app-navbar {
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+}
+
+.app-starter__container {
+    padding-top: 15rem;
+}
+
+.app-starter__container h1 {
+    font-size: 3rem;
+}
+
+.app-starter__container p {
+    color: white;
+}
+
+.app-features__conatainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.app-features__conatainer .feature {
+    width: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 15px;
+    background-color: #85C1E9;
+    color: white;
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.app-features__conatainer .feature:first-child {
+    background-color: #ECF0F1;
+    color: black;
+}
+
+.food-wasting__container {
+    background-color: #F4F6F6;
+    padding: 5rem 0;
+}
+
+.food-wasting__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.food-wasting__info .fw-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.food-wasting__info .fw-item h4 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.food-wasting__info .fw-item p {
+    font-size: .9rem;
+}
+
+.gf-benefits {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.gf-benefits .gf-item {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: #F4F6F6;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.main-wrapper {
+    min-height: 100vh;
+    background: url(../../assets/bg.png) center;
+    background-size: cover;
+}
+
+@media screen and (max-width: 992px) {
+    .app-features__conatainer {
+        justify-content: center;
+    }
+
+    .app-navbar {
+        position: relative;
+    }
+
+    .app-starter__container {
+        padding-top: 0px;
+    }
+}

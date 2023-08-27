@@ -1,0 +1,136 @@
+:root {
+  /* ===== Colors ===== */
+  --body-color: #f4f6f7;
+  --sidebar-color: #fff;
+  --primary-color: #695cfe;
+  --primary-color-light: #f6f5ff;
+  --toggle-color: #ddd;
+  --text-color: #707070;
+
+  /* ====== Transition ====== */
+  --tran-03: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.3s ease;
+  --tran-05: all 0.3s ease;
+
+  --primary-text-color: #163b61;
+  --secondary-text-color: #0071ff;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--body-color);
+  transition: var(--tran-05);
+  font-family: "Tajawal", sans-serif;
+}
+
+::selection {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+body.dark {
+  --body-color: #18191a;
+  --sidebar-color: #242526;
+  --primary-color: #3a3b3c;
+  --primary-color-light: #3a3b3c;
+  --toggle-color: #fff;
+  --text-color: #ccc;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+:is(h1, h2, h3, h4, h5, h6) {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  color: rgb(146, 140, 140);
+}
+
+.home {
+  position: absolute;
+  top: 0;
+  top: 0;
+  left: 250px;
+  height: 100vh;
+  width: calc(100% - 250px);
+  padding: 1.5rem;
+  background-color: var(--primary-color-light);
+  transition: var(--tran-05);
+}
+.home .text {
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--text-color);
+  padding: 12px 60px;
+}
+
+.sidebar.close ~ .home {
+  left: 88px;
+  height: 100vh;
+  width: calc(100% - 88px);
+}
+
+body.dark .home .text {
+  color: var(--text-color);
+}
+
+.breadcrumb-item::before {
+  color: white !important;
+}
+
+.pagination {
+  margin: 15px auto;
+  display: flex;
+  list-style: none;
+  outline: none;
+}
+.pagination > .active > a {
+  background-color: #47ccde;
+  border-color: #47ccde;
+  color: #fff;
+}
+.pagination > li > a {
+  border: 1px solid #47ccde;
+  padding: 5px 10px;
+  outline: none;
+  cursor: pointer;
+}
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  background-color: #47ccde;
+  border-color: #47ccde;
+  outline: none;
+}
+.pagination > li > a,
+.pagination > li > span {
+  color: #47ccde;
+}
+.pagination > li:first-child > a,
+.pagination > li:first-child > span,
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+  border-radius: unset;
+}
+
+@media screen and (max-width: 992px) {
+  .col-xs-12 {
+    margin-bottom: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-direction: column;
+  }
+}

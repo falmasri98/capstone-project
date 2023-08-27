@@ -1,0 +1,48 @@
+.admin-homepage__container {
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.home-page__items {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.admin-homepage__container .home-page__item {
+    padding: 1rem 1.5rem;
+    background-color: #F7F9F9;
+    border-radius: 15px;
+    width: 20rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    
+    
+}
+
+.admin-homepage__container .home-page__item .header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 25px;
+}
+
+.admin-homepage__container .home-page__item h1 {
+    font-size: 4rem;
+}
+
+.admin-homepage__container .table-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

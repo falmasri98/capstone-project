@@ -1,0 +1,21 @@
+.users-messages__container {
+    padding: 1.5rem 2rem;
+}
+
+.users-messages__container .users-messages__list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.users-messages__container .list-item {
+    width: 18rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 12px;
+}

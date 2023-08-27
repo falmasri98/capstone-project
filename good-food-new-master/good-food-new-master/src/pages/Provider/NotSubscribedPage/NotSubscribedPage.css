@@ -1,0 +1,47 @@
+.not-subscribed__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 70vh;
+}
+
+.not-subscribed__container button {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.not-subscribed__container button:hover {
+    color: var(--primary-color);
+    outline: 1px solid var(--primary-color);
+}
+
+.subscription-plans__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin-top: 40px;
+}
+
+.subscription-plans__container .subscribtion-item {
+    width: 18rem;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.subscribtion-item .features-list {
+   
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+}

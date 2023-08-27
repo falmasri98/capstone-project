@@ -1,0 +1,52 @@
+.contact-us__container {
+    padding-block-end: 3rem;
+}
+
+.contact-us__header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40vh;
+    background: url('https://images.unsplash.com/photo-1528747045269-390fe33c19f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80') center;
+    background-size: cover;
+    margin-bottom: 80px;
+}
+
+.contactUs-items {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.contactUs-items .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-us__form {
+    padding: 2rem 1.5rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 12px;
+}
+
+.contact-us__form form :is(input, textarea) {
+    border: 1px solid black;
+    padding: .75rem 1rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.contact-us__form form :is(input, textarea)::placeholder {
+    color: rgb(185, 185, 185);
+}
+
+.contact-us__form form button {
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: .65rem 1rem;
+}

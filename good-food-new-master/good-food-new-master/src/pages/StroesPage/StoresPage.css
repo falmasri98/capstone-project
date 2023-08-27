@@ -1,0 +1,274 @@
+.store-page__container a {
+    text-decoration: none;
+    color: black;
+}
+
+.stores-page__header, .stores-page__header {
+    width: 100%;
+    min-height: 30vh;
+    background-color: rgb(35, 127, 158);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.store-searchbar {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.store-searchbar input {
+    
+    background: white;
+    padding: .75rem 1.5rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.store-searchbar input:focus {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.stores-page__content {
+    margin-top: 40px;
+    padding: 1rem 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.stores-page__content .stores-list {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.stores-page__content .card img {
+    height: 220px;
+    border-bottom: 1px solid lightgray;
+}
+
+.single-store__services {
+    margin-top: 40px;
+    padding: 1.5rem 3rem;
+}
+
+.single-store__services .services-list {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.services-list .store-service__item {
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1.2rem 1.5rem;
+    border-radius: 15px;
+    background-color: #EAEDED;
+}
+
+.services-list .btn-primary {
+    background-color: rgb(35, 127, 158);
+}
+
+.empty-services__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.visa-payment .form-label {
+    margin-bottom: 0;
+}
+
+.visa-payment input {
+    outline: 1px solid lightgray;
+    padding: .5rem 1rem;
+}
+
+/*  visa card styles  */
+
+.user-payment__container .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.user-payment__container .container form{
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0,0,0,.1);
+    padding: 20px;
+    padding-top: 160px;
+}
+
+.user-payment__container .container form .inputBox{
+    margin-top: 20px;
+}
+
+.user-payment__container .container form .inputBox span{
+    display: block;
+    color:#999;
+    padding-bottom: 5px;
+}
+
+.user-payment__container .container form .inputBox input {
+  text-transform: uppercase;
+}
+
+.user-payment__container .container form .inputBox input,
+.user-payment__container .container form .inputBox select{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border:1px solid rgba(0,0,0,.3);
+    color:#444;
+}
+
+.user-payment__container .container form .flexbox{
+    display: flex;
+    gap:15px;
+}
+
+.user-payment__container .container form .flexbox .inputBox{
+    flex:1 1 150px;
+}
+
+.user-payment__container .container form .submit-btn{
+    width: 100%;
+    background:linear-gradient(45deg, blueviolet, #695cfe);
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    color:#fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.user-payment__container .container form .submit-btn:hover{
+    letter-spacing: 2px;
+    opacity: .8;
+}
+
+.user-payment__container .container .card-container{
+    margin-bottom: -150px;
+    position: relative;
+    height: 250px;
+    width: 400px;
+}
+
+.user-payment__container .container .card-container .front{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0; left: 0;
+    background:linear-gradient(45deg, blueviolet, #695cfe);
+    border-radius: 5px;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0,0,0,.2);
+    padding:20px;
+    transform:perspective(1000px) rotateY(0deg);
+    transition:transform .4s ease-out;
+}
+
+.user-payment__container .container .card-container .front .image{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.container .card-container .front .image img{
+    height: 50px;
+}
+
+.user-payment__container .container .card-container .front .card-number-box{
+    padding:30px 0;
+    font-size: 22px;
+    color:#fff;
+}
+
+.user-payment__container .container .card-container .front .flexbox{
+    display: flex;
+}
+
+.user-payment__container .container .card-container .front .flexbox .box:nth-child(1){
+    margin-right: auto;
+}
+
+.user-payment__container .container .card-container .front .flexbox .box{
+    font-size: 15px;
+    color:#fff;
+}
+
+.user-payment__container .container .card-container .back{
+    position: absolute;
+    top:0; left: 0;
+    height: 100%;
+    width: 100%;
+    background:linear-gradient(45deg, blueviolet, #695cfe);
+    border-radius: 5px;
+    padding: 20px 0;
+    text-align: right;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0,0,0,.2);
+    transform:perspective(1000px) rotateY(180deg);
+    transition:transform .4s ease-out;
+}
+
+.user-payment__container .container .card-container .back .stripe{
+    background: #000;
+    width: 100%;
+    margin: 10px 0;
+    height: 50px;
+}
+
+.user-payment__container .container .card-container .back .box{
+    padding: 0 20px;
+}
+
+.user-payment__container .container .card-container .back .box span{
+    color:#fff;
+    font-size: 15px;
+}
+
+.user-payment__container .container .card-container .back .box .cvv-box{
+    height: 50px;
+    padding: 10px;
+    margin-top: 5px;
+    color:#333;
+    background: #fff;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.user-payment__container .container .card-container .back .box img{
+    margin-top: 30px;
+    height: 30px;
+}
+
+@media screen and (max-width: 992px) {
+    .stores-page__content .stores-list, .single-store__services .services-list {
+        width: 100%;
+    }
+
+    .store-searchbar {
+        flex-direction: column;
+        width: 400px;
+    }
+}

@@ -1,0 +1,36 @@
+.Auth-page__container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Auth-page__container .row .col-xs-12:first-child {
+    padding-top: 3rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 100px;
+    flex-direction: column;
+    padding-block-end: 3rem;
+}
+
+.Auth-page__container .row .col-xs-12:last-child {
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom right,#6600FF, #00CC99);
+}
+
+.Auth-page__container h2, .Auth-page__container h6 {
+    color: #163b61;
+}
+
+.primary-form-color {
+    color: var(--secondary-text-color);
+    background: none;
+}
+
+.Auth-page__container a {
+    text-decoration: none;
+    color: var(--secondary-text-color);
+    font-weight: bold;
+}

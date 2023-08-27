@@ -1,0 +1,12 @@
+.admin-login__container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin-login__container .row .col-xs-12:last-child {
+    background-color: #0288D1;
+    min-height: 98vh;
+    border-radius: 20px;
+}

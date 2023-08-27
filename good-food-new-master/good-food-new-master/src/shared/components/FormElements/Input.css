@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+.form-control {
+  margin: 1rem 0;
+  background-color: transparent;
+  border: none;
+  padding-left: 0px;
+}
+
+.form-control label,
+.form-control input,
+.form-control textarea {
+  display: block;
+  font-family: 'Raleway', sans-serif;
+}
+
+.form-control label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #163b61;
+}
+
+.form-control input,
+.form-control textarea {
+  width: 100%;
+  font: inherit;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: .5rem 1rem;
+}
+
+.form-control input:focus,
+.form-control textarea:focus {
+  outline: none;
+  background: #ebebeb;
+  border-color: #510077;
+}
+
+.form-control--invalid label,
+.form-control--invalid p {
+  color: red;
+}
+
+.form-control--invalid input,
+.form-control--invalid textarea {
+  border-color: red;
+  background: #ffd1d1;
+}
